@@ -19,7 +19,7 @@ auto test(int i)
 }
 
 //4.decltype(auto), 用来声明变量以及指示函数返回值
-//C++1中,因为auto总是推导出非引用类型,而auto&&总是推导出引用类型.
+//C++11中,因为auto总是推导出非引用类型,而auto&&总是推导出引用类型.
 //decltype却可以根据表达式的值类别和性质推导出引用或非引用.
 //因此C++14中新增decltype(auto)
 //当decltype(auto)被用于声明变量时，该变量必须立即初始化
@@ -43,12 +43,14 @@ decltype(auto) I = 3;
 template<typename T>
 T pi = T(3.1415926);
 
+
 //7.聚合类成员初始化
 struct MyStruct
 {
 	int x;
 	int y = 42;
 };
+
 
 //10.deprecated属性
 [[deprecated("f 是即将被弃用的方法!!")]] void f()
