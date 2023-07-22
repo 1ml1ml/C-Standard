@@ -18,6 +18,7 @@ auto test(int i)
 #endif
 }
 
+
 //4.decltype(auto), 用来声明变量以及指示函数返回值
 //C++11中,因为auto总是推导出非引用类型,而auto&&总是推导出引用类型.
 //decltype却可以根据表达式的值类别和性质推导出引用或非引用.
